@@ -1,0 +1,70 @@
+﻿@model TTPShop.Models.LienHe
+
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section breadcrumb{
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="/"><i class="fa fa-home"></i> Trang Chủ</a>
+                        <span>Liên hệ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+}
+
+<section class="contact spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="contact__content">
+                    <div class="contact__address">
+                        <h5>Thông tin liên hệ</h5>
+                        <ul>
+                            <li>
+                                <h6><i class="fa fa-map-marker"></i> Địa chỉ</h6>
+                                <p>@Model.DiaChi</p>
+                            </li>
+                            <li>
+                                <h6><i class="fa fa-calendar"></i> Thời gian làm việc</h6>
+                                <p>@Model.ThoiGianLamViec</p>
+                            </li>
+                            <li>
+                                <h6><i class="fa fa-phone"></i> Số điện thoại</h6>
+                                <p><span>@Model.DienThoai</span></p>
+                            </li>
+                            <li>
+                                <h6><i class="fa fa-envelope-open"></i> Email</h6>
+                                <p>@Model.Email</p>
+                            </li>
+
+                            <li>
+                                <h5>Giới thiệu TTP SHOP</h5>
+                                <p>
+                                    Trần Xuân Tùng - 065384<br>Hồ Phúc Vân Thiên - 065343<br>Vũ Hoàng Phúc - 062308
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1265615724597!2d106.71226721474918!3d10.801617492304468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528a459cb43ab%3A0x6c3d29d370b52a7e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVFAuSENNIC0gSFVURUNI!5e0!3m2!1svi!2s!4v1679897837041!5m2!1svi!2s" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

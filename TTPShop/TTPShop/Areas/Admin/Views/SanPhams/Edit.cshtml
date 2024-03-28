@@ -1,0 +1,133 @@
+﻿@model TTPShop.Models.SanPham
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
+    var anhSanPham = Model.AnhSP;
+    var ImagePath = "~/Areas/Admin/Assets/images/" + anhSanPham;
+}
+
+<h2>Sửa sản phẩm</h2>
+
+<script src="~/Theme/ckeditor/ckeditor.js"></script>
+
+@using (Html.BeginForm("Edit", "SanPhams", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.MaSP)
+
+    <div class="form-group">
+        <label>Danh mục</label>
+        <div class="col-md-10">
+            @Html.DropDownList("MaDM", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaDM, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Tên sản phẩm</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TenSP, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Giá bán</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.GiaBan, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.GiaBan, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Ảnh</label>
+        <div class="col-md-10">
+            <img id="output" class="img-rounded" alt="Ảnh" width="180" height="200" src="@Url.Content(ImagePath)" />
+            <p><label for="ufile" style="cursor:pointer;">Chọn file ảnh</label></p>
+            <input type="file" name="ImageFile" id="ufile" style="display:none;" onchange="loadFile(event)" />
+            @if (Model.AnhSP != null && Model.AnhSP != "")
+            {
+                <input type="text" name="oldImage" style="display:none;" value="@Url.Content(anhSanPham)" />
+            }
+            else
+            {
+                <input type="text" name="oldImage" style="display:none;" value="" />
+            }
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Mô tả</label>
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control" }, id = "moTa" })
+            @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+            <script type="text/javascript">
+
+                CKEDITOR.config.language = "vi";
+                CKEDITOR.config.htmlEncodeOutput = false;
+                CKEDITOR.config.pasteFormWordPromptCleanup = true;
+                CKEDITOR.config.pasteFormWordRemoveFontStyles = false;
+                CKEDITOR.config.pasteFormWordRemoveStyles = false;
+                CKEDITOR.config.ProcessHTMLEntities = false;
+                CKEDITOR.config.entities = false;
+                CKEDITOR.config.entities_latin = false;
+                CKEDITOR.config.ForceSimpleAmpersand = true;
+                CKEDITOR.replace('moTa');
+
+            </script>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Khuyến mãi</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PhanTramKM, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PhanTramKM, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Số lượng</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.SoLuong, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.SoLuong, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Ngày tạo</label>
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.NgayTao, new { @readonly = "readonly" })
+        </div>
+    </div>
+    @if (ViewBag.Error != null)
+    {
+    <div class="row py-1 alert alert-danger text-center">
+        <p class="text-center title-error">@ViewBag.Error</p>
+    </div>
+    }
+
+    <div class="py-3 pb-4 border-bottom">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Lưu" class="btn btn-primary" />
+                <a class="btn border button" href="/Admin/SanPhams">Trở lại</a>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+<script>
+    var loadFile = function (event) {
+        var image = document.getElementById('output')
+        image.src = URL.createObjectURL(event.target.files[0])
+    }
+</script>
+
+

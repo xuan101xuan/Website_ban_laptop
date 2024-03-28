@@ -1,0 +1,106 @@
+﻿@model IEnumerable<TTPShop.Models.DanhMuc>
+<header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-lg-2">
+                <div class="header__logo">
+                    <a href="@Url.Action("Index","Home")"><img class="logo-home" src="~/Theme/img/logo.jpg" /></a>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6">
+                <nav class="header__menu">
+                    <ul>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active": "")">@Html.ActionLink("Trang chủ", "Index", "Home")</li>
+                        <li>
+                            <a>DANH MỤC</a>
+                            <ul class="dropdown">
+                                @foreach (var item in Model)
+                                {
+                                    <li><a href="@Url.Action("Shop","Home",new { MaDM = item.MaDM })">@item.TenDM</a></li>
+                                }
+                            </ul>
+                        </li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Shop" ? "active": "")">@Html.ActionLink("Sản phẩm", "Shop", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active": "")">@Html.ActionLink("Liên hệ", "Contact", "Home")</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-4">
+                <div class="header__right">
+                    <div class="account-action">
+                        @if (Session["HoTen"] != null)
+                        {
+                            if (Session["Perrmission"].ToString() == "Administrator")
+                            {
+                                <div class="dropdown">
+                                    <a data-bs-toggle="dropdown" class="dropdown-toggle">Chào @Session["HoTen"]</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="@Url.Action("EditUserInfor", "Home", new { id = Session["MaTK"] })">Sửa thông tin</a>
+                                        <a class="dropdown-item" href="@Url.Action("DanhsachDonhang","Home")"> Đơn hàng của bạn</a>
+                                        <a class="dropdown-item" href="@Url.Action("Index", "Admin")">Quản lý</a>
+                                        <a class="dropdown-item" href="@Url.Action("Logout", "Home")">Đăng xuất</a>
+
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="dropdown">
+                                    <a data-bs-toggle="dropdown" class="dropdown-toggle">Chào @Session["HoTen"]</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="@Url.Action("EditUserInfor", "Home", new { id = Session["MaTK"] })">Sửa thông tin</a>
+                                        <a class="dropdown-item" href="@Url.Action("DanhsachDonhang","Home")"> Đơn hàng của bạn</a>
+                                        <a class="dropdown-item" href="@Url.Action("Logout", "Home")">Đăng xuất</a>
+                                    </div>
+                                </div>
+
+                            }
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Login", "Home")">Đăng nhập</a>
+                        }
+                        <div class="giohang">
+                            @{ Html.RenderAction("Show_Count_Cart", "Home"); }
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        <div class="canvas__open dropdown">
+            <div class="dropdown">
+                <a data-bs-toggle="dropdown"><i class="fa fa-bars icon-bar"></i></a>
+                <div class="dropdown-menu">
+                    <a href="@Url.Action("Index", "Home")" class="dropdown-item">Trang chủ</a>
+                    <a href="@Url.Action("Shop", "Home")" class="dropdown-item">Danh mục</a>
+                    <a href="@Url.Action("ShopCart", "Home")" class="dropdown-item">Giỏ hàng</a>
+
+                    @if (Session["HoTen"] != null)
+                    {
+                        if (Session["Perrmission"].ToString() == "Administrator")
+                        {
+                            <a class="dropdown-item" href="@Url.Action("EditUserInfor", "Home", new { id =  Session["MaTK"] })">Sửa thông tin</a>
+                            <a class="dropdown-item" href="@Url.Action("DanhsachDonhang","Home")"> Đơn hàng của bạn</a>
+                            <a class="dropdown-item" href="@Url.Action("Index", "Admin")">Quản lý</a>
+                            <a class="dropdown-item" href="@Url.Action("Logout", "Home")">Đăng xuất</a>
+
+                        }
+                        else
+                        {
+                            <a class="dropdown-item" href="@Url.Action("EditUserInfor", "Home", new { id =  Session["MaTK"] })">Sửa thông tin</a>
+                            <a class="dropdown-item" href="@Url.Action("DanhsachDonhang","Home")"> Đơn hàng của bạn</a>
+                            <a class="dropdown-item" href="@Url.Action("Logout", "Home")">Đăng xuất</a>
+
+                        }
+
+                    }
+                    else
+                    {
+                        <a class="dropdown-item" href="@Url.Action("Login", "Home")">Đăng nhập</a>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

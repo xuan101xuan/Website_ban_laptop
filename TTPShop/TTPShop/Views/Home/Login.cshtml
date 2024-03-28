@@ -1,0 +1,93 @@
+﻿@model TTPShop.Models.TaiKhoan
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="~/Areas/Admin/Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/libs/css/style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/vendor/fonts/fontawesome/css/fontawesome-all.css" rel="stylesheet" />
+    <link href="~/Theme/css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/Theme/img/logo.jpg" type="image/x-icon" />
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .logo-img {
+            width: 100px;
+            height: 80px;
+        }
+
+
+        .body-login {
+            width: 100%;
+            height: 100%;
+        }
+
+        #error-login {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="body-login">
+    <!-- ============================================================== -->
+    <!-- login page  -->
+    <!-- ============================================================== -->
+    <div class="splash-container">
+        <div class="card ">
+            <div class="card-header text-center"><a href="@Url.Action("Index", "Home")"><img class="logo-img" src="~/Theme/img/logo.jpg" alt="logo"></a><h3>Đăng nhập </h3></div>
+            <div class="card-body">
+                @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.DiaChiEmail, "", new { @class = "form-control", @placeholder = "Email" })
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.MatKhau, "", new { @class = "form-control", @placeholder = "Mật khẩu", @type = "password" })
+                    </div>
+                    <input type="submit" name="submit" value="Đăng nhập" class="btn btn-primary btn-lg btn-block" />
+                }
+                <br />
+                <p id="error-login" style="color: red;">@ViewBag.Error</p>
+            </div>
+            <div class="card-footer bg-white p-0 text-center ">
+                <div class="card-footer-item card-footer-item-bordered">
+                    @Html.ActionLink("Tạo tài khoản", "Register", "Home")
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- end login page  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <script src="~/Areas/Admin/Assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="~/Areas/Admin/Assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

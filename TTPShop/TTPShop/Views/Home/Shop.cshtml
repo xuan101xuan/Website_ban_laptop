@@ -1,0 +1,80 @@
+﻿@model PagedList.IPagedList<TTPShop.Models.SanPham>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{ ViewBag.Title = "Shop";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+@section breadcrumb{
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option"style="background-color: lightpink">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="@Url.Action("Index","Home")"><i class="fa fa-home"></i> Trang Chủ</a>
+                        <span><a href="@Url.Action("Shop","Home")">Sản phẩm</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+}
+<!-- Shop Section Begin -->
+<section class="shop spad"style="background-color: lightpink">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                @{ Html.RenderAction("shop_sidebar"); }
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                @{ var AnhSP = "~/Areas/Admin/Assets/images/" + item.AnhSP; }
+                                <div class="product__item__pic set-bg" data-setbg="@Url.Content(AnhSP)">
+                                    @{ TimeSpan difference = DateTime.Now - item.NgayTao; }
+                                    @if (item.SoLuong <= 0)
+                                    {
+                                        <div class="label stockout">Hết hàng</div>
+                                    }
+                                    else if (item.PhanTramKM != null && item.PhanTramKM > 0 && item.PhanTramKM.ToString().Trim() != "")
+                                    {
+                                        <div class="label sale">Sale @item.PhanTramKM %</div>
+                                    }
+                                    else if (difference.Days < 7)
+                                    {
+                                        <div class="label new">New</div>
+                                    }
+                                    <ul class="product__hover">
+                                        @*<li><a href="@Url.Content(AnhSP)" class="image-popup"><span class="arrow_expand"></span></a></li>*@
+
+                                        <li><a href="/Home/AddItem_icon?productID=@item.MaSP"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="@Url.Action("ProductDetails","Home",new { id = item.MaSP })">@Html.DisplayFor(modelItem => item.TenSP)</a></h6>
+                                    @if (item.PhanTramKM != null && item.PhanTramKM > 0 && item.PhanTramKM.ToString().Trim() != "")
+                                    {
+                                        int phanTramKM = int.Parse(@item.PhanTramKM.ToString());
+                                        int giaSauKM = @item.GiaBan - @item.GiaBan * phanTramKM / 100;
+                                        <div class="product__price">@giaSauKM.ToString("N0") VNĐ</div>
+                                    }
+                                    else
+                                    {
+                                        <div class="product__price">@item.GiaBan.ToString("N0") VNĐ</div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+                @Html.PagedListPager(Model, page => Url.Action("Shop", new { page }))
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Shop Section End -->

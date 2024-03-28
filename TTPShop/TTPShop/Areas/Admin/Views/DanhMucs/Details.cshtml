@@ -1,0 +1,32 @@
+﻿@model TTPShop.Models.DanhMuc
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
+    var ImagePath = "~/Areas/Admin/Assets/images/" + Model.AnhDM;
+}
+
+<h2>Chi tiết danh mục</h2>
+
+<div class="wrapper bg-white mt-sm-5">
+    <div class="py-1 row-details">
+        <div class="row py-1">
+            Tên danh mục:&nbsp; <b>@Model.TenDM</b>
+        </div>
+        <div class="row py-1">
+            Ảnh:
+        </div>
+        <div class="row py-1">
+            <img src="@Url.Content(ImagePath)" width="100" class="img-thumbnail" alt="Alternate Text" />
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <a class="btn btn-primary" href="@Url.Action("Edit", new{ id = Model.MaDM })">Sửa</a>
+                    <a class="btn border button" href="/Admin/DanhMucs">Trở lại</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

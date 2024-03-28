@@ -1,0 +1,457 @@
+﻿/*---------------------------------------------------------*/
+/*TABLE ADMIN*/
+/*----------------------------------------------------------*/
+.table-wrapper {
+    width: 100%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    margin-top: 5%;
+    height: 95%;
+}
+
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+}
+
+    .table-title h2 {
+        margin: 6px 0 0;
+        font-size: 22px;
+    }
+
+    .table-title .add-new {
+        float: right;
+        height: 30px;
+        font-weight: bold;
+        font-size: 12px;
+        text-shadow: none;
+        min-width: 40px;
+        max-width: 100px;
+        border-radius: 50px;
+        line-height: 13px;
+    }
+
+        .table-title .add-new i {
+            margin-right: 4px;
+        }
+
+table.table {
+    table-layout: fixed;
+}
+
+    table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+    }
+
+    table.table th i {
+        font-size: 13px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    table.table th:last-child {
+        width: 250px;
+    }
+
+    table.table th:nth-child(4) {
+        width: 90px;
+    }
+
+    table.table th:nth-child(3) {
+        width: 120px;
+    }
+
+    table.table td a {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 5px;
+        min-width: 24px;
+    }
+
+        table.table td a.add {
+            color: #27C46B;
+        }
+
+        table.table td a.edit {
+            color: #FFC107;
+        }
+
+        table.table td a.delete {
+            color: #E34724;
+        }
+
+    table.table td i {
+        font-size: 19px;
+    }
+
+    table.table td a.add i {
+        font-size: 24px;
+        margin-right: -1px;
+        position: relative;
+        top: 3px;
+    }
+
+    table.table .form-control {
+        height: 32px;
+        line-height: 32px;
+        box-shadow: none;
+        border-radius: 2px;
+    }
+
+        table.table .form-control.error {
+            border-color: #f50000;
+        }
+
+    table.table td .add {
+        display: none;
+    }
+
+/*---------------------------------------------------------*/
+/*INDEX CONTACT*/
+/*----------------------------------------------------------*/
+.lienhe-col.table th:last-child {
+    width: 200px;
+}
+
+.lienhe-col.table th:nth-child(1) {
+    width: 20%;
+}
+
+.lienhe-col.table th:nth-child(2) {
+    width: 17%;
+}
+
+.lienhe-col.table th:nth-child(3) {
+    width: 11%;
+}
+
+.lienhe-col.table th:nth-child(4) {
+    width: 23%;
+}
+/*---------------------------------------------------------*/
+/*INDEX DANHMUC*/
+/*----------------------------------------------------------*/
+.danhmuc-col.table th:last-child {
+    width: 200px;
+}
+
+/*---------------------------------------------------------*/
+/*INDEX DON HANG*/
+/*----------------------------------------------------------*/
+
+.sapham-col.table th:last-child {
+    width: 200px;
+}
+
+.sapham-col.table th:nth-child(1) {
+    width: 11%;
+}
+
+.sapham-col.table th:nth-child(2) {
+    width: 20%;
+}
+
+.sapham-col.table th:nth-child(3) {
+    width: 14%;
+}
+
+.sapham-col.table th:nth-child(4) {
+    width: 10%;
+}
+
+.sapham-col.table th:nth-child(5) {
+    width: 10%;
+}
+
+.sapham-col.table th:nth-child(6) {
+    width: 10%;
+}
+/*---------------------------------------------------------*/
+/*INDEX DON HANG*/
+/*----------------------------------------------------------*/
+table {
+    table-layout: fixed;
+}
+
+.table th {
+    overflow-wrap: break-word;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.col-donhang.table th:nth-child(1) {
+    width: 15%;
+}
+
+.col-donhang.table th:nth-child(2) {
+    width: 13%;
+}
+
+.col-donhang.table th:nth-child(3) {
+    width: 18%;
+}
+
+.col-donhang.table th:nth-child(4) {
+    width: 18%;
+}
+
+.col-donhang.table th:nth-child(5) {
+    width: 15%;
+}
+
+.col-donhang.table th:last-child {
+    width: 200px;
+}
+
+/*---------------------------------------------------------*/
+/*CHITIETDONHANG*/
+/*----------------------------------------------------------*/
+.col-chitietdon.table th:last-child {
+    width: 150px;
+}
+
+.col-chitietdon.table th:nth-child(1) {
+    width: 50%;
+}
+
+.col-chitietdon.table th:nth-child(2) {
+    width: 10%;
+}
+
+.col-chitietdon.table th:nth-child(3) {
+    width: 20%;
+}
+/*---------------------------------------------------------*/
+/*TAIKHOAN ADMIN*/
+/*----------------------------------------------------------*/
+.col-taikhoan.table th:last-child {
+    width: 250px;
+}
+
+.col-taikhoan.table th:nth-child(1) {
+    width: 25%;
+}
+
+.col-taikhoan.table th:nth-child(2) {
+    width: 25%;
+}
+
+.col-taikhoan.table th:nth-child(3) {
+    width: 12%;
+}
+
+.col-taikhoan.table th:nth-child(4) {
+    width: 10%;
+}
+/*---------------------------------------------------------*/
+/*SIDEBAR ADMIN*/
+/*----------------------------------------------------------*/
+.btn-delete {
+    width: 40px;
+    display: inline;
+}
+
+.btn-edit {
+    display: inline;
+}
+
+.btn-block {
+    width: 40px;
+    display: inline;
+}
+
+    .btn-block:focus {
+        border: none;
+        outline: none;
+    }
+
+#action {
+    display: block;
+    margin: auto;
+}
+
+i {
+    margin: auto;
+}
+
+.material-icons {
+    position: center;
+}
+
+
+/*---------------------------------------------------------*/
+/*INDEX*/
+/*----------------------------------------------------------*/
+.single_quick_activity {
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    height: 200px;
+}
+
+.danhmuc-cell {
+    background-color: blueviolet;
+}
+
+    .danhmuc-cell:hover {
+        background-color: cornflowerblue;
+    }
+
+.sanpham-cell {
+    background-color: cornflowerblue;
+}
+
+    .sanpham-cell:hover {
+        background-color: cyan;
+    }
+
+.donhang-cell {
+    background-color: darkmagenta;
+}
+
+    .donhang-cell:hover {
+        background-color: darkturquoise;
+    }
+
+.nguoidung-cell {
+    background-color: lightslategray;
+}
+
+    .nguoidung-cell:hover {
+        background-color: lightcyan;
+    }
+
+.col-total {
+    display: inline-flex;
+}
+
+
+.danhmuc-total {
+    margin: 50px;
+}
+
+.total-count {
+    color: white;
+    font-size: 40px;
+}
+
+.details-total:hover {
+    text-decoration: none;
+}
+
+
+/*-------------------------------------------------------*/
+/*DETAILS ADMIN CSSS*/
+/*-------------------------------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue
+}
+
+
+label {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+    padding-left: 3px
+}
+
+.form-control {
+    border-radius: 10px
+}
+
+input[placeholder] {
+    font-weight: 500
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1.5px solid #0779e4
+}
+
+select {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px 10px
+}
+
+    select:focus {
+        outline: none
+    }
+
+.button {
+    background-color: #fff;
+    color: #0779e4
+}
+
+    .button:hover {
+        background-color: #0779e4;
+        color: #fff
+    }
+
+.btn-primary {
+    background-color: #0779e4
+}
+
+.row-details {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.error-edit {
+    margin-left: 1000px;
+}
+
+.title-error {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+
+/*-----------------------------------------------------*/
+/*LIEN HE*/
+/*-----------------------------------------------------*/
+.contact-admin-view {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*-----------------------------------------------------*/
+/*SAN PHAM*/
+/*-----------------------------------------------------*/
+.Search-sanpham {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+
+.sidebar-link {
+    height: 50px;
+}
+
+.bx-home {
+    width: 50px;
+    height: 50px;
+}

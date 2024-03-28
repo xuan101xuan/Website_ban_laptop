@@ -1,0 +1,414 @@
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\obj\Debug\TTPShop.csproj.AssemblyReference.cache
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\obj\Debug\TTPShop.csproj.CoreCompileInputs.cache
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\obj\Debug\WebLATA.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\obj\Debug\WebLATA.pdb
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\WebLATA.dll.config
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\WebLATA.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\WebLATA.pdb
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\csc.exe
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\csc.exe.config
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\csc.rsp
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\csi.exe
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\csi.exe.config
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\csi.rsp
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\System.Buffers.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\System.Collections.Immutable.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\System.Memory.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\System.Numerics.Vectors.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\System.Reflection.Metadata.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\vbc.exe
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\vbc.exe.config
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\vbc.rsp
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\VBCSCompiler.exe
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\roslyn\VBCSCompiler.exe.config
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\Antlr3.Runtime.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\EntityFramework.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\EntityFramework.SqlServer.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\Microsoft.Web.Infrastructure.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\Newtonsoft.Json.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\PagedList.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\PagedList.Mvc.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Helpers.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Mvc.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Optimization.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Razor.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Webpages.Deployment.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Webpages.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Webpages.Razor.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\Web.Optimization.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\WebGrease.dll
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\Antlr3.Runtime.pdb
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\EntityFramework.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\EntityFramework.SqlServer.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\Newtonsoft.Json.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\PagedList.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\PagedList.Mvc.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Optimization.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Razor.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Webpages.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Webpages.Deployment.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Webpages.Razor.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Helpers.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\bin\System.Web.Mvc.xml
+D:\CODE_DOWN\Store_Laptop\HTComputer\HTComputer\obj\Debug\TTPShop.csproj.CopyComplete
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\WebLATA.dll.config
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\WebLATA.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\WebLATA.pdb
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\csc.exe
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\csc.exe.config
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\csc.rsp
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\csi.exe
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\csi.exe.config
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\csi.rsp
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\System.Buffers.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\System.Collections.Immutable.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\System.Memory.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\System.Numerics.Vectors.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\vbc.exe
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\vbc.exe.config
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\vbc.rsp
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe.config
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\Antlr3.Runtime.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\EntityFramework.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\EntityFramework.SqlServer.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\Microsoft.Web.Infrastructure.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\Newtonsoft.Json.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\PagedList.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\PagedList.Mvc.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Helpers.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Mvc.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Optimization.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Razor.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Webpages.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\Web.Optimization.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\WebGrease.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\Antlr3.Runtime.pdb
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\EntityFramework.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\EntityFramework.SqlServer.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\Newtonsoft.Json.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\PagedList.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\PagedList.Mvc.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Optimization.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Razor.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Webpages.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Helpers.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\bin\System.Web.Mvc.xml
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.AssemblyReference.cache
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.CoreCompileInputs.cache
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.CopyComplete
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\obj\Debug\WebLATA.dll
+D:\CODE_DOWN\folder (2)\TTPShop\TTPShop\obj\Debug\WebLATA.pdb
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.dll.config
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.pdb
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.exe
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.exe.config
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.rsp
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.exe
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.exe.config
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.rsp
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Buffers.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Collections.Immutable.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Memory.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Numerics.Vectors.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.exe
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.exe.config
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.rsp
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe.config
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\Antlr3.Runtime.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.SqlServer.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.Web.Infrastructure.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\Newtonsoft.Json.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\PagedList.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\PagedList.Mvc.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Helpers.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Mvc.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Optimization.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Razor.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\Web.Optimization.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\WebGrease.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\Antlr3.Runtime.pdb
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.SqlServer.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\Newtonsoft.Json.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\PagedList.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\PagedList.Mvc.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Optimization.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Razor.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Helpers.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Mvc.xml
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.AssemblyReference.cache
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.CoreCompileInputs.cache
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.CopyComplete
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\obj\Debug\WebLATA.dll
+D:\CODE_DOWN\Store_Laptop\TTPShop\TTPShop\obj\Debug\WebLATA.pdb
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.dll.config
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.pdb
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.exe
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.exe.config
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.rsp
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.exe
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.exe.config
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.rsp
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Buffers.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Collections.Immutable.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Memory.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Numerics.Vectors.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.exe
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.exe.config
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.rsp
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe.config
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\Antlr3.Runtime.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.SqlServer.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.Web.Infrastructure.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\Newtonsoft.Json.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\PagedList.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\PagedList.Mvc.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Helpers.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Mvc.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Optimization.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Razor.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\Web.Optimization.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\WebGrease.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\Antlr3.Runtime.pdb
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.SqlServer.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\Newtonsoft.Json.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\PagedList.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\PagedList.Mvc.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Optimization.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Razor.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Helpers.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Mvc.xml
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.AssemblyReference.cache
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.CoreCompileInputs.cache
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.CopyComplete
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\obj\Debug\WebLATA.dll
+D:\Downloads\Zalo\Files\Store_Laptop\TTPShop\TTPShop\obj\Debug\WebLATA.pdb
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.dll.config
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.pdb
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.exe
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.exe.config
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.rsp
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.exe
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.exe.config
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.rsp
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Buffers.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Collections.Immutable.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Memory.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Numerics.Vectors.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.exe
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.exe.config
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.rsp
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe.config
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Antlr3.Runtime.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.SqlServer.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.Web.Infrastructure.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Newtonsoft.Json.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\PagedList.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\PagedList.Mvc.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Helpers.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Mvc.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Optimization.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Razor.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Web.Optimization.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\WebGrease.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Antlr3.Runtime.pdb
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.SqlServer.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Newtonsoft.Json.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\PagedList.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\PagedList.Mvc.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Optimization.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Razor.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Helpers.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Mvc.xml
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.AssemblyReference.cache
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.CoreCompileInputs.cache
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.CopyComplete
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\WebLATA.dll
+D:\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\WebLATA.pdb
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.dll.config
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\WebLATA.pdb
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.exe
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.exe.config
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csc.rsp
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.exe
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.exe.config
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\csi.rsp
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Buffers.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Collections.Immutable.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Memory.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Numerics.Vectors.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.exe
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.exe.config
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\vbc.rsp
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\roslyn\VBCSCompiler.exe.config
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Antlr3.Runtime.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.SqlServer.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.Web.Infrastructure.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Newtonsoft.Json.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\PagedList.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\PagedList.Mvc.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Helpers.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Mvc.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Optimization.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Razor.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Web.Optimization.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\WebGrease.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Antlr3.Runtime.pdb
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\EntityFramework.SqlServer.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\Newtonsoft.Json.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\PagedList.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\PagedList.Mvc.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Optimization.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Razor.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Deployment.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Webpages.Razor.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Helpers.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\bin\System.Web.Mvc.xml
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.AssemblyReference.cache
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.CoreCompileInputs.cache
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\TTPShop.csproj.Up2Date
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\WebLATA.dll
+D:\Downloads\Project_1\Lap trinh WEB\CODE_DOWN\New folder\Store_Laptop\TTPShop\TTPShop\obj\Debug\WebLATA.pdb

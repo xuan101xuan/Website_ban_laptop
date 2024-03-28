@@ -1,0 +1,132 @@
+﻿@model TTPShop.Models.TaiKhoan
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<h2>Sửa thông tin</h2>
+<div class="wrapper bg-white mt-sm-5">
+    <div class="py-1 row-details">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row py-2">
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.MaTK)
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Địa chỉ email</label>
+                        @Html.EditorFor(model => model.DiaChiEmail, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.DiaChiEmail, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Mật khẩu</label>
+                        @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Họ và tên</label>
+                        @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Số điện thoại</label>
+                        @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="GioiTinh">Giới tính</label>
+                        <select name="GioiTinh" id="GioiTinh">
+                            @if (Model.GioiTinh == "Nam")
+                            {
+                                <option value="Nam" selected>Nam</option>
+                                <option value="Nữ">Nữ</option>
+                            }
+                            else
+                            {
+                                <option value="Nam">Nam</option>
+                                <option value="Nữ" selected>Nữ</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="VaiTro">Vai trò</label>
+                        <select name="VaiTro" id="VaiTro">
+                            @if (Model.VaiTro == "Administrator")
+                            {
+                                <option value="Administrator" selected>Administrator</option>
+                                <option value="User">User</option>
+                            }
+                            else
+                            {
+                                <option value="Administrator">Administrator</option>
+                                <option value="User" selected>User</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-2">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <span class="control-label col-md-2">Ngày sinh</span> <br />
+                        @Html.TextBoxFor(m => m.NgaySinh, "{0:yyyy-MM-dd}", new { type = "date" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="TrangThai">Trạng thái</label>
+                        <select name="TrangThai" id="TrangThai">
+                            @if (Model.TrangThai == 1)
+                            {
+                                <option value=1 selected>Active</option>
+                                <option value=0>Block</option>
+                            }
+                            else
+                            {
+                                <option value=1>Active</option>
+                                <option value=0 selected>Block</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            if (ViewBag.Error != null)
+            {
+                <div class="row py-1 alert alert-danger text-center">
+                    <p class="text-center title-error">@ViewBag.Error</p>
+                </div>
+            }
+                
+            <div class="py-3 pb-4 border-bottom">
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Lưu" class="btn btn-primary" />
+                        <a class="btn border button" href="/Admin/Taikhoans">Trở lại</a>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+</div>
+

@@ -1,0 +1,90 @@
+﻿@model IEnumerable<TTPShop.Models.CartItem>
+
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section breadcrumb{
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="/"><i class="fa fa-home"></i> Trang chủ</a>
+                        <a href="/Home/ShopCart">Giỏ hàng</a>
+                        <span>Thanh toán</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+}
+
+<section class="checkout spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3>Chi tiết thanh toán</h3>
+                <br />
+                <div class="row">
+                    <div class="shop__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Giá bán</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="cart__product__item">
+                                            <img src="img/shop-cart/cp-1.jpg" alt="">
+                                            <div class="cart__product__item__title">
+                                                <h6>@item.Product.TenSP</h6>
+                                            </div>
+                                        </td>
+
+                                        @{ int giaKM = -1;
+                                            int giaBan = item.Product.GiaBan;
+                                            if ((item.Product.PhanTramKM != null || item.Product.PhanTramKM.ToString().Trim() != "") && item.Product.PhanTramKM > 0)
+                                            {
+                                                int phanTramKM = int.Parse(item.Product.PhanTramKM.ToString());
+                                                giaKM = giaBan - giaBan * phanTramKM / 100;
+                                            }
+                                            else
+                                            {
+                                                giaKM = giaBan;
+                                            }
+                                        }
+                                        @if (giaKM != -1)
+                                        {
+                                            <td class="cart__price">@giaKM VND</td>
+                                        }
+                                        <td class="cart__quantity text-center">
+                                            @item.Cart.quantity
+                                        </td>
+                                        <td class="cart__total">@((item.Cart.quantity * giaKM).ToString("N0")) VND</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                @{
+                    Html.RenderAction("ChiTietDonHang", "Home", new { MaTK = Session["MaTK"] });
+                }
+            </div>
+        </div>
+    </div>
+</section>

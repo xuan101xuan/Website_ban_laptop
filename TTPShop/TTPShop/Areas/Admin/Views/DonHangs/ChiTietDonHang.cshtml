@@ -1,0 +1,80 @@
+﻿@model IEnumerable<TTPShop.Models.ChiTietDH>
+
+@{
+    ViewBag.Title = "ChiTietDonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<section class="home-section">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2><b>Chi tiết mặt hàng</b></h2></div>
+
+                    <div class="col-sm-4">
+                        <a href="@Url.Action("CreateChiTietDonHang", new { id = ViewData["id"]})" class="btn btn-info add-new"><i class="fa fa-plus"></i> Thêm sản phẩm </a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered col-chitietdon" id="table-user">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            Tên sản phẩm
+                        </th>
+                        <th class="text-center">
+                            Số lượng
+                        </th>
+                        <th class="text-center">
+                            Thành tiền
+                        </th>
+                        <th class="text-center">
+                            Thiết lập
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                @Html.DisplayFor(modelItem => item.SanPham.TenSP)
+                            </td>
+                            <td class="text-center">
+                                @Html.DisplayFor(modelItem => item.SoLuong)
+                            </td>
+                            @{ int giaKM = -1;
+                                int giaBan = item.SanPham.GiaBan;
+                                if ((item.SanPham.PhanTramKM != null || item.SanPham.PhanTramKM.ToString().Trim() != "") && item.SanPham.PhanTramKM > 0)
+                                {
+                                    int phanTramKM = int.Parse(item.SanPham.PhanTramKM.ToString());
+                                    giaKM = (giaBan - giaBan * phanTramKM / 100) * item.SoLuong;
+                                }
+                                else
+                                {
+                                    giaKM = giaBan;
+                                }
+                            }
+                            @if (giaKM != -1)
+                            {
+                                <td class="cart__price">@giaKM.ToString("N0") VND</td>
+                            }
+                            <td class="text-center align-middle">
+                                <a href="@Url.Action("EditChiTietDonHang", new { id = item.id, SoDH = ViewData["id"] })" class="edit btn btn-edit" title="Sửa" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a href="@Url.Action("DeleteChiTietDonHang", new { id = item.id, SoDH = ViewData["id"] })" data-toggle="tooltip" class="delete btn btn-link btn-delete" title="Xóa"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="py-3 pb-4 border-bottom">
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <a class="btn border button" href="@Url.Action("Index")">Trở lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="dashboard-ecommerce">
+    <div class="container-fluid dashboard-content ">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-header">
+                    <h2 class="pageheader-title">QUẢN LÝ TTP SHOP</h2>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-total">
+                <div class="col-6 single_quick_activity danhmuc-cell">
+                    <div class="danhmuc-total">
+                        <a href="/Admin/DanhMucs" class="details-total">
+                            <h3>Danh mục</h3>
+                            <h3>
+                                <span class="total-count">@ViewData["danhmuc"]</span>
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 single_quick_activity sanpham-cell">
+                    <div class="danhmuc-total">
+                        <a href="/Admin/SanPhams" class="details-total">
+                            <h3>Sản phẩm</h3>
+                            <h3>
+                                <span class="total-count">@ViewData["sanpham"]</span>
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-total">
+                <div class="col-6 single_quick_activity donhang-cell">
+                    <div class="danhmuc-total">
+                        <a href="/Admin/DonHangs" class="details-total">
+                            <h3>Đơn hàng</h3>
+                            <h3>
+                                <span class="total-count">@ViewData["donhang"]</span>
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 single_quick_activity nguoidung-cell">
+                    <div class="danhmuc-total">
+                        <a href="/Admin/TaiKhoans" class="details-total">
+                            <h3>Khách hàng</h3>
+                            <h3>
+                                <span class="total-count">@ViewData["taikhoan"]</span>
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

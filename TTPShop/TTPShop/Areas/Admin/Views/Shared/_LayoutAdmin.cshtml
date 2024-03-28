@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+    <meta name="author" content="Bootlab">
+
+    <title>TTP Shop</title>
+
+    <link rel="shortcut icon" href="~/Areas/Admin/Assets/img/logo.jpg" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link href="~/Areas/Admin/Assets/css/classic.css" rel="stylesheet">
+    <link href="~/Areas/Admin/Assets/css/style.css" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-6"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120946860-6');</script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1685936, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');</script>
+</head>
+
+<body>
+    <div class="wrapper">
+        @{
+            Html.RenderPartial("_SidebarAdmin");
+        }
+
+        <div class="main">
+            @{ Html.RenderPartial("_HeaderAdmin"); }
+
+            <main class="content">
+                @RenderBody()
+            </main>
+
+            @{ Html.RenderPartial("_FooterAdmin"); }
+        </div>
+    </div>
+
+    <script src="~/Areas/Admin/Assets/js/app.js"></script>
+    <script src="~/Areas/Admin/Assets/js/setting.js"></script>
+
+</body>
+</html>

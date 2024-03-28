@@ -1,0 +1,83 @@
+﻿@model TTPShop.Models.DonHang
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Bạn có chắc muốn xóa đơn hàng?</h2>
+
+<div class="wrapper bg-white mt-sm-5">
+    <div class="py-1 row-details">
+        <div class="row py-1">
+
+            <div class="col-md-6">
+                <label>Địa chỉ email: </label> <b>@Model.TaiKhoan.DiaChiEmail</b>
+            </div>
+            <div class="col-md-6">
+                <label>Ngày đặt: </label> <b>@Model.NgayDat</b>
+            </div>
+        </div>
+
+        <div class="row py-1">
+            <div class="col-md-6">
+                <label>Tổng tiền: </label> <b>@Model.TongTien.ToString("N0") VNĐ</b>
+            </div>
+            <div class="col-md-6">
+                <label>Hình thức thanh toán: </label>
+                @if (Model.HinhThucTT == 0)
+                {
+                    <b>Thanh toán khi nhận hàng</b>
+                }
+                else if (Model.HinhThucTT == 1)
+                {
+                    <b>Thanh toán bằng ví MoMo</b>
+                }
+                else
+                {
+                    <b>Thanh toán trực tiếp</b>
+                }
+            </div>
+
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label>Địa chỉ giao hàng: </label> <b>@Model.DiaChiGH</b>
+            </div>
+            <div class="col-md-6">
+                <label>Trạng thái</label>
+                @if (Model.TinhTrang == 0)
+                {
+                    <p>Đang xử lý</p>
+                }
+                else if (Model.TinhTrang == 1)
+                {
+                    <b>Đang Vận chuyển</b>
+                }
+                else if (Model.TinhTrang == 2)
+                {
+                    <b>Đã giao</b>
+                }
+                else if (Model.TinhTrang == 3)
+                {
+                    <b>Đã hủy</b>
+                }
+            </div>
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Xóa" class="btn btn-danger" />
+                            <a class="btn border button" href="/Admin/DonHangs">Trở lại</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

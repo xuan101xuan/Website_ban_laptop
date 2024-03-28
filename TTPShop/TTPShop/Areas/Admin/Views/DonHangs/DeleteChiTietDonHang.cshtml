@@ -1,0 +1,38 @@
+﻿@model TTPShop.Models.ChiTietDH
+
+@{
+    ViewBag.Title = "DeleteChiTietDonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Bạn có chắc muốn xóa đơn hàng?</h2>
+
+<div class="wrapper bg-white mt-sm-5">
+    <div class="py-1 row-details">
+        <div class="row py-1">
+
+            <div class="col-md-6">
+                <label>Sản phẩm: </label> <b>@Model.SanPham.TenSP</b>
+            </div>
+            <div class="col-md-6">
+                <label>Số lượng: </label> <b>@Model.SoLuong</b>
+            </div>
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="hidden" name="SoDH" id="SoDH" value="@ViewData["SoDH"]"/>
+                            <input type="submit" value="Xóa" class="btn btn-danger" />
+                            <a class="btn border button" href="@Url.Action("ChiTietDonHang", new { id = Model.id, SoDH = ViewData["SODH"] })">Trở lại</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

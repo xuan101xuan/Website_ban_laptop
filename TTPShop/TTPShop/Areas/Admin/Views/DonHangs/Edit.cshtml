@@ -1,0 +1,137 @@
+﻿@model TTPShop.Models.DonHang
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Sửa đơn hàng</h2>
+
+<div class="wrapper bg-white mt-sm-5">
+    <div class="py-1 row-details">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.SoDH)
+            <div class="row py-1">
+                <div class="form-group contact-admin-view">
+                    <label>Địa chỉ giao hàng</label>
+                    @Html.EditorFor(model => model.DiaChiGH, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DiaChiGH, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="form-group contact-admin-view">
+                    <label>Tổng tiền</label>
+                    @Html.EditorFor(model => model.TongTien, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TongTien, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="form-group contact-admin-view">
+                    <label>Người đặt</label>
+                    @Html.DropDownList("MaTK", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.MaTK, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="form-group contact-admin-view">
+                    <label>Tình trạng</label>
+                    <select name="TinhTrang" id="GioiTinh">
+                        @if (Model != null)
+                        {
+                            if (Model.TinhTrang == 0)
+                            {
+                                <option value=0 selected>Đang xử lý</option>
+                                <option value=1>Đang vận chuyển</option>
+                                <option value=2>Đã giao</option>
+                                <option value=3>Đã hủy</option>
+                            }
+                            else if (Model.TinhTrang == 1)
+                            {
+                                <option value=0>Đang xử lý</option>
+                                <option value=1 selected>Đang vận chuyển</option>
+                                <option value=2>Đã giao</option>
+                                <option value=3>Đã hủy</option>
+                            }
+                            else if (Model.TinhTrang == 2)
+                            {
+                                <option value=0>Đang xử lý</option>
+                                <option value=1>Đang vận chuyển</option>
+                                <option value=2 selected>Đã giao</option>
+                                <option value=3>Đã hủy</option>
+                            }
+                            else
+                            {
+                                <option value=0>Đang xử lý</option>
+                                <option value=1>Đang vận chuyển</option>
+                                <option value=2>Đã giao</option>
+                                <option value=3 selected>Đã hủy</option>
+                            }
+                        }
+                        else
+                        {
+                            <option value=0>Đang xử lý</option>
+                            <option value=1>Đang vận chuyển</option>
+                            <option value=2>Đã giao</option>
+                            <option value=3>Đã hủy</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="row py-1">
+                <div class="form-group contact-admin-view">
+                    <label>Hình thức thanh toán</label>
+                    <select name="HinhThucTT" id="GioiTinh">
+                        @if (Model != null)
+                        {
+                            if (Model.HinhThucTT == 0)
+                            {
+                                <option value=0 selected>Thanh toán khi nhận hàng</option>
+                                <option value=1>Thanh toán bằng ví MoMo</option>
+                                <option value=2>Thanh toán trực tiếp</option>
+                            }
+                            else if (Model.HinhThucTT == 1)
+                            {
+                                <option value=0>Thanh toán khi nhận hàng</option>
+                                <option value=1 selected>Thanh toán bằng ví MoMo</option>
+                                <option value=2>Thanh toán trực tiếp</option>
+                            }
+                            else
+                            {
+                                <option value=0>Thanh toán khi nhận hàng</option>
+                                <option value=1>Thanh toán bằng ví MoMo</option>
+                                <option value=2 selected>Thanh toán trực tiếp</option>
+                            }
+                        }
+                        else
+                        {
+                            <option value=0>Thanh toán khi nhận hàng</option>
+                            <option value=1>Thanh toán bằng ví MoMo</option>
+                            <option value=2>Thanh toán trực tiếp</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            if (ViewBag.Error != null)
+            {
+                <div class="row py-1 alert alert-danger text-center">
+                    <p class="text-center title-error">@ViewBag.Error</p>
+                </div>
+            }
+
+            <div class="py-3 pb-4 border-bottom">
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Lưu" class="btn btn-primary" />
+                        <a class="btn border button" href="/Admin/DonHangs">Trở lại</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

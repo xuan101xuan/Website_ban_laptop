@@ -1,0 +1,92 @@
+﻿@model TTPShop.Models.SanPham
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
+    var ImagePath = "~/Areas/Admin/Assets/images/" + Model.AnhSP;
+}
+
+<h2>Xóa sản phẩm</h2>
+
+<h3>Bạn có chắc muốn xóa?</h3>
+
+<div class="wrapper bg-white mt-sm-5">
+    <div class="py-1 row-details">
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label>Tên sản phẩm: </label> <b>@Model.TenSP</b>
+            </div>
+            <div class="col-md-6">
+                @if (ViewData["MaDM"] != null)
+                {
+                    <label>Tên danh mục: </label> <b>@ViewData["MaDM"]</b>
+                }
+                else
+                {
+                    <label>Tên danh mục: </label> <b>@Model.DanhMuc.TenDM</b>
+                }
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label>Giá bán: </label> <b>@Model.GiaBan.ToString("N0") VNĐ</b>
+            </div>
+            <div class="col-md-6">
+                <label>Khuyến mãi: </label> <b>@Model.PhanTramKM%</b>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label>Số lượng: </label> <b>@Model.SoLuong</b>
+            </div>
+            <div class="col-md-6">
+                <label>Ngày tạo: </label> <b>@Model.NgayTao</b>
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-md-6">
+                <label>Ảnh: </label>
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-md-6">
+                <img src="@Url.Content(ImagePath)" width="100" class="img-thumbnail" alt="Alternate Text" />
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-md-6">
+                <label>Mô tả: </label>
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-md-12">
+                <b>@Html.Raw(Model.MoTa)</b>
+            </div>
+        </div>
+
+        @if (ViewData["Error"] != null)
+        {
+            <div class="row py-1 alert alert-danger text-center">
+                <p class="text-center title-error">@ViewData["Error"]</p>
+            </div>
+        }
+
+        <div class="py-3 pb-4 border-bottom">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Xóa" class="btn btn-danger" />
+                            <a class="btn border button" href="/Admin/SanPhams">Trở lại</a>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

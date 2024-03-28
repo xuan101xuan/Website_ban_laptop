@@ -1,0 +1,47 @@
+﻿@model TTPShop.Models.LienHe
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Xoá liên hệ</h2>
+
+<h3>Bạn có chắc muốn xoá bản ghi này?</h3>
+
+<div class="wrapper bg-white mt-sm-5">
+    <div class="py-1 row-details">
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label>Địa chỉ: </label> <b>@Model.DiaChi</b>
+            </div>
+            <div class="col-md-6">
+                <label>Email: </label> <b>@Model.Email</b>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label>Điện thoại: </label> <b>@Model.DienThoai</b>
+            </div>
+            <div class="col-md-6">
+                <label>Thời gian làm việc: </label> <b>@Model.ThoiGianLamViec</b>
+            </div>
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Xóa" class="btn btn-danger" />
+                            <a class="btn border button" href="/Admin/LienHes">Trở lại</a>
+                        </div>
+                    }  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

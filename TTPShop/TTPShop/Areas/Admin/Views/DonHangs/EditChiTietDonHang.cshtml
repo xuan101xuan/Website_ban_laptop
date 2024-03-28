@@ -1,0 +1,50 @@
+﻿@model TTPShop.Models.ChiTietDH
+
+@{
+    ViewBag.Title = "EditChiTietDonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Chỉnh sửa sản phẩm đơn hàng</h2>
+
+<div class="wrapper bg-white mt-sm-5">
+    <div class="py-1 row-details">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.id)
+            <input type="hidden" name="SoDH" id="SoDH" value="@ViewData["SoDH"]" />
+            <div class="row py-1">
+                <div class="form-group contact-admin-view">
+                    <label>Sản phẩm</label>
+                    @Html.DropDownList("MaSP", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.MaSP, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row py-1">
+                <div class="form-group contact-admin-view">
+                    <label>Số lượng</label>
+                    @Html.EditorFor(model => model.SoLuong, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SoLuong, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            if (ViewBag.Error != null)
+            {
+                <div class="row py-1 alert alert-danger text-center">
+                    <p class="text-center title-error">@ViewBag.Error</p>
+                </div>
+            }
+            <div class="py-3 pb-4 border-bottom">
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Lưu" class="btn btn-primary" />
+                        <a class="btn border button" href="@Url.Action("ChiTietDonHang", new { id = Model.id, SoDH = ViewData["id"]})">Trở lại</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

@@ -1,0 +1,40 @@
+﻿<nav id="sidebar" class="sidebar">
+    <div class="sidebar-content ">
+        <a class="sidebar-brand" href="@Url.Action("Index", "Home")">
+            <i class="align-middle" data-feather="box"></i>
+            <span class="align-middle">Quản lý</span>
+        </a>
+
+        <ul class="sidebar-nav">
+            <li class="sidebar-header">
+                Quản trị
+            </li>
+            <li class="sidebar-item">
+                <a href="@Url.Action("Index", "DanhMucs")" class="sidebar-link @(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                    <i class="align-middle bx bx-list-ul"></i> <span class="align-middle">Danh mục</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="@Url.Action("Index", "SanPhams")" class="sidebar-link">
+                    <i class="align-middle bx bx-store"></i> <span class="align-middle">Sản phẩm</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="@Url.Action("Index", "TaiKhoans")" class="sidebar-link">
+                    <i class="align-middle bx bx-user"></i> <span class="align-middle">Tài khoản</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="@Url.Action("Index", "LienHes")" class="sidebar-link">
+                    <i class="align-middle bx bxs-contact"></i> <span class="align-middle">Liên hệ</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="@Url.Action("Index", "DonHangs")" class="sidebar-link">
+                    <i class="align-middle bx bx-receipt"></i> <span class="align-middle">Đơn hàng</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>

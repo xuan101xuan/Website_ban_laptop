@@ -1,0 +1,123 @@
+﻿@model TTPShop.Models.TaiKhoan
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register</title>
+    <!-- Bootstrap CSS -->
+    <link href="~/Areas/Admin/Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/libs/css/style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/vendor/fonts/fontawesome/css/fontawesome-all.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/Theme/img/logo.jpg" type="image/x-icon" />
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .logo-img {
+            width: 100px;
+            height: 80px;
+        }
+
+
+        .body-login {
+            width: 100%;
+            height: 100%;
+        }
+
+        #error-login {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!---------------------------------->
+    <div class="splash-container">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="card ">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="card-header text-center"><a href="@Url.Action("Index","Home")"><img class="logo-img" src="~/Theme/img/logo.jpg" alt="logo"></a><span class="splash-description">Vui lòng nhập thông tin để đăng ký.</span></div>
+                <div class="card-body">
+                    <form method="post" action="">
+                        <div class="form-group">
+                            @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control", @placeholder = "Họ và tên", @required = "required" } })
+                            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.TextBoxFor(model => model.NgaySinh, new { htmlAttributes = new { @class = "form-control-lg" }, @type = "date", @style = "width: 100%;", @required = "required" })
+                        </div>
+                        <div class="form-group">
+                            @Html.EditorFor(model => model.DiaChiEmail, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email", @required = "required", @type = "text", @pattern = ".+@gmail.com" } })
+                            @Html.ValidationMessageFor(model => model.DiaChiEmail, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control", @placeholder = "Mật khẩu", @type = "password", @required = "required" } })
+                            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <label for="GioiTinh">Giới tính</label>
+                            <br />
+                            <select type="text" name="GioiTinh" id="GioiTinh">
+                                <option value="Nam">Nam</option>
+                                <option value="Nữ">Nữ</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control", @placeholder = "Số điện thoại", @type = "text", @pattern = "[0]{1}[0-9]{9}", @required = "required" } })
+                            @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+                        </div>
+                        <input type="submit" name="submit" value="Đăng ký" class="btn btn-primary btn-lg btn-block" />
+                        @if (ViewBag.Error != null)
+                        {
+                            <br />
+                            <p style="color:red;">@ViewBag.Error</p>
+                        }
+                    </form>
+                </div>
+                <div class="card-footer bg-white p-0 text-center">
+                    <div class="card-footer-item card-footer-item-bordered">
+                        @Html.ActionLink("Đăng nhập", "Login", "Home")
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <script src="~/Areas/Admin/Assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="~/Areas/Admin/Assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+        var d = new Date();
+        d = new Date(d.getTime() - d.getTimezoneOffset() * 60000)
+        var elem = document.getElementById("NgaySinh");
+        if (elem.value.length == 0) {
+            elem.value = d.toISOString().slice(0, 10);
+        }
+    </script>
+</body>
+</html>
+
+

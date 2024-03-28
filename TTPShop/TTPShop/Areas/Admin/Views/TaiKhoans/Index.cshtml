@@ -1,0 +1,88 @@
+﻿@model PagedList.IPagedList<TTPShop.Models.TaiKhoan>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<section class="home-section">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2><b>Danh sách tài khoản</b></h2></div>
+                    <div class="col-sm-4">
+                        <a href="@Url.Action("Create")" class="btn btn-info add-new"><i class="fa fa-plus"></i> Thêm </a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered col-taikhoan" id="table-user">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            <span>Địa chỉ email</span>
+                        </th>
+                        <th class="text-center">
+                            <span>Họ tên</span>
+                        </th>
+                        <th class="text-center">
+                            <span>Số điện thoại</span>
+                        </th>
+                        <th class="text-center">
+                            <span>Trạng thái</span>
+                        </th>
+                        <th class="text-center">
+                            <span>Thiết lập</span>
+                            
+                        </th>
+                    </tr>
+                </thead>
+                <tbody  >
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DiaChiEmail)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.HoTen)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SoDienThoai)
+                            </td>
+
+                            <td>
+                                @if (item.TrangThai == 1)
+                                {
+                                    @:activated
+                                }
+                                else if (item.TrangThai == 0)
+                                {
+                                    @:blocked
+                                }
+                            </td>
+                            <td class="text-center align-middle">
+                                <a href="@Url.Action("Details", new { id = item.MaTK })" class="edit btn btn-edit" title="Chi tiết" data-toggle="tooltip"><i class="bx bx-detail"></i></a>
+                                <a href="@Url.Action("Edit", new { id = item.MaTK })" class="edit btn btn-edit" title="Sửa" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                @if (item.TrangThai == 0)
+                                {
+                                    <a href="@Url.Action("Block", new { id = item.MaTK })" class="block btn btn-link btn-block" title="Mở khóa" data-toggle="tooltip"><i class="bx bx-lock-open"></i></a>
+                                }
+                                else
+                                {
+                                    <a href="@Url.Action("Block", new { id = item.MaTK })" class="block btn btn-link btn-block" title="Khóa" data-toggle="tooltip"><i class="bx bx-lock"></i></a>
+                                }
+
+                                <a href="@Url.Action("Delete", new { id = item.MaTK })" data-toggle="tooltip" class="delete btn btn-link btn-delete" title="Xóa"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+Trang @(Model.PageCount <Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, currentFilter = ViewBag.CurrentFilter }))

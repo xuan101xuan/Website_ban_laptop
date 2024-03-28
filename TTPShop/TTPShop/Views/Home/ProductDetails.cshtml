@@ -1,0 +1,100 @@
+﻿@model TTPShop.Models.SanPham
+
+@{
+    ViewBag.Title = "ProductDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section breadcrumb{
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="/"><i class="fa fa-home"></i> Trang chủ</a>
+                        <a href="@Url.Action("Shop","Home",new { MaDM = Model.MaDM })">@Model.DanhMuc.TenDM </a>
+                        <span>@Model.TenSP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+}
+<!-- Product Details Section Begin -->
+<section class="product-details spad">
+    <div class="container">
+        @if (Model != null)
+        {
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="product__details__pic">
+                        @{
+                            string ImagePath = "~/Areas/Admin/Assets/images/" + Model.AnhSP;
+                        }
+                        <img src="@Url.Content(ImagePath)" style="border-radius: 1%;" />
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product__details__text">
+                        <h3>@Model.TenSP</h3>
+                        @{ int giaKM = -1;
+                            int giaBan = Model.GiaBan;
+                            if ((Model.PhanTramKM != null || Model.PhanTramKM.ToString().Trim() != "") && Model.PhanTramKM > 0)
+                            {
+                                int phanTramKM = int.Parse(Model.PhanTramKM.ToString());
+                                giaKM = giaBan - giaBan * phanTramKM / 100;
+                            }
+                        }
+                        @if (giaKM != -1)
+                        {
+                            <div class="product__details__price">@giaKM.ToString("N0") VNĐ<span>@Model.GiaBan.ToString("N0") VNĐ</span></div>
+                            <span>@Html.Raw(Model.MoTa)</span>
+                        }
+                        else
+                        {
+                            <div class="product__details__price">@Model.GiaBan.ToString("N0") VNĐ</div>
+                            <span>@Html.Raw(Model.MoTa)</span>
+                        }
+                        @if (ViewBag.ErrorSoLuong != null)
+                        {
+                            <div class="alert alert-danger">@ViewBag.ErrorSoLuong</div>
+                        }
+                        <form action="/Home/AddItem" method="post">
+                            <div class="product__details__button">
+                                <div class="quantity">
+                                    <span>Số lượng:</span>
+                                    <div class="pro-qty">
+                                        <input type="text" value="1" name="soluong">
+                                    </div>
+                                    <div>
+                                        <input type="text" value="@Model.MaSP" name="productID" style="display:none">
+                                    </div>
+                                    <div>
+                                        <input type="submit" value="Thêm vào giỏ" class="cart-btn">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="product__details__widget">
+                            <ul>
+                                <li>
+                                    <span>Khuyến mãi thêm:</span>
+                                    <p>Free shipping</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                @{
+                    Html.RenderAction("_SanPhamLienQuan", "Home", new { MaDM = Model.MaDM });
+                }
+            </div>
+        }
+    </div>
+</section>
+<!-- Product Details Section End -->

@@ -1,0 +1,59 @@
+﻿@model TTPShop.Models.TaiKhoan
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Thông tin thành viên</h2>
+
+<div class="wrapper bg-white mt-sm-5">
+    <div class="py-1 row-details">
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label>Địa chỉ email: </label> <b>@Model.DiaChiEmail</b>
+            </div>
+            <div class="col-md-6">
+                <label>Mật khẩu: </label> <b>@Model.MatKhau</b>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label>Họ và tên: </label> <b>@Model.HoTen</b>
+            </div>
+            <div class="col-md-6">
+                <label>Vai trò: </label> <b>@Model.VaiTro</b>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-6">
+                <label>Giới tính: </label> <b>@Model.GioiTinh</b>
+            </div>
+            <div class="col-md-6">
+                <label>Ngày sinh: </label> <b>@Model.NgaySinh</b>
+            </div>
+        </div>
+        <div class="row py-1">
+            <div class="col-md-6">
+                <label>Trạng thái: </label>
+                @if (Model.TrangThai == 1)
+                {
+                    <b>Activated</b>
+                }
+                else
+                {
+                    <b>Blocked</b>
+                }
+            </div>
+        </div>
+        <div class="py-3 pb-4 border-bottom">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <a class="btn btn-primary" href="@Url.Action("Edit", new{ id = Model.MaTK })">Sửa</a>
+                    <a class="btn border button" href="/Admin/Taikhoans">Trở lại</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+

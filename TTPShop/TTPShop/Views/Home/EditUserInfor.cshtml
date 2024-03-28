@@ -1,0 +1,92 @@
+﻿@model TTPShop.Models.TaiKhoan
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="~/Areas/Admin/Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/libs/css/style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/vendor/fonts/fontawesome/css/fontawesome-all.css" rel="stylesheet" />
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!---------------------------------->
+    <div class="splash-container">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="card ">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="card-header text-center"><a href="@Url.Action("Index","Home")"></a><span class="splash-description">Xin chào @Session["HoTen"] - @Model.DiaChiEmail!</span></div>
+                <div class="card-body">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.MaTK)
+                    @Html.HiddenFor(model => model.VaiTro)
+                    @Html.HiddenFor(model => model.DiaChiEmail)
+                    @Html.HiddenFor(model => model.TrangThai)
+
+                    <div class="form-group">
+                        <label>Họ và tên</label>
+                        @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control", @placeholder = "Họ và tên" } })
+                        @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày Sinh</label>
+                        @Html.TextBoxFor(m => m.NgaySinh, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date", @max = "2015-12-31" })
+                        @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu</label>
+                        @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control", @placeholder = "Mật khẩu", @type = "password" } })
+                        @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>Giới tính</label>
+                        @Html.DropDownList("GioiTinh", new SelectList(ViewBag.Genders), new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại</label>
+                        @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control", @placeholder = "Số điện thoại", @disabled = "disabled", @readonly = "readonly" } })
+                        @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+                    </div>
+                    <input type="submit" name="submit" value="Sửa" class="btn btn-primary btn-lg btn-block" />
+                    @if (ViewBag.Error != null)
+                    {
+                        <br />
+                        <p style="color:red;">@ViewBag.Error</p>
+                    }
+                </div>
+                <div class="card-footer bg-white p-0 text-center">
+                    <div class="card-footer-item card-footer-item-bordered">
+                        @Html.ActionLink("Trở lại", "Index", "Home")
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <script src="~/Areas/Admin/Assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="~/Areas/Admin/Assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

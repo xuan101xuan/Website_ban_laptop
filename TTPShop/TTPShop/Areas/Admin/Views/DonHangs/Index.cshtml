@@ -1,0 +1,91 @@
+﻿@model PagedList.IPagedList<TTPShop.Models.DonHang>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
+    <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+}
+
+<section class="home-section">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2><b>Danh sách đơn hàng</b></h2></div>
+
+                    <div class="col-sm-4">
+                        <a href="@Url.Action("Create")" class="btn btn-info add-new"><i class="fa fa-plus"></i> Thêm </a>
+                    </div>
+                    <div>
+                        @using (Html.BeginForm())
+                        {
+                            <p class="Search-sanpham">
+                                Tìm kiếm người đặt: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+                                <input type="submit" class="btn btn-secondary" value="Tìm" />
+                            </p>
+                        }
+                    </div>
+
+                </div>
+            </div>
+            <table class="table table-bordered col-donhang" id="table-user">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            Người đặt
+                        </th>
+                        <th class="text-center">
+                            Số điện thoại
+                        </th>
+                        <th class="text-center">
+                            Địa chỉ email
+                        </th>
+                        <th class="text-center">
+                            Địa chỉ giao hàng
+                        </th>
+                        <th class="text-center">
+                            Tổng tiền
+                        </th>
+                        <th class="text-center">
+                            Thiết lập
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                @Html.DisplayFor(modelItem => item.TaiKhoan.HoTen)
+                            </td>
+                            <td class="text-center">
+                                @Html.DisplayFor(modelItem => item.TaiKhoan.SoDienThoai)
+                            </td>
+                            <td class="text-center">
+                                @Html.DisplayFor(modelItem => item.TaiKhoan.DiaChiEmail)
+                            </td>
+                            <td class="text-center">
+                                @Html.DisplayFor(modelItem => item.DiaChiGH)
+                            </td>
+
+                            <td class="text-center">
+                                @item.TongTien.ToString("N0") VNĐ
+                            </td>
+                            <td class="text-center align-middle">
+                                <a href="@Url.Action("Details", new { id = item.SoDH })" class="edit btn btn-edit" title="Chi tiết" data-toggle="tooltip"><i class="bx bx-detail"></i></a>
+                                <a href="@Url.Action("Edit", new { id = item.SoDH })" class="edit btn btn-edit" title="Sửa" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+
+                                <a href="@Url.Action("Delete", new { id = item.SoDH })" data-toggle="tooltip" class="delete btn btn-link btn-delete" title="Xóa"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+Trang @(Model.PageCount <Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, currentFilter = ViewBag.CurrentFilter }))

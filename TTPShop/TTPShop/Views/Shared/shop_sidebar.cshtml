@@ -1,0 +1,49 @@
+﻿@model IEnumerable<TTPShop.Models.DanhMuc>
+
+<div class="shop__sidebar">
+    <div class="sidebar__categories">
+        <div class="section-title">
+            <h4>Danh mục</h4>
+        </div>
+        <div class="categories__accordion">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-heading">
+                        <a data-toggle="collapse" data-target="#collapseTwo">Laptops</a>
+                    </div>
+                    <div id="collapseTwo" class="collapse show" data-parent="#accordionExample">
+                        <div class="card-body" >
+                            <ul>
+                                @foreach (var item in Model)
+                                {
+                                    <li><a href="@Url.Action("Shop","Home",new { MaDM = item.MaDM })">@item.TenDM</a></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @using (Html.BeginForm())
+    {
+        <aside class="single_sidebar_widget search_widget">
+            <form action="#">
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <input name="searchString" type="text" class="form-control" placeholder='Từ khóa tìm kiếm'
+                               onfocus="this.placeholder = ''"
+                               onblur="this.placeholder = 'Từ khóa tìm kiếm'">
+                        <div class="input-group-append">
+                            <button class="btn" type="button"><i class="ti-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success"
+                        type="submit">
+                    Tìm kiếm
+                </button>
+            </form>
+        </aside>
+    }
+</div>
